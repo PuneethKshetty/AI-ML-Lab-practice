@@ -38,11 +38,11 @@ def aStarAlgo(start_node,stop_node):
                     path.reverse()
                     print('Path found : {}'.format(path))
                     return path
-                open_set.remove(n)
-                closed_set.add(n)
+        open_set.remove(n)
+        closed_set.add(n)
          
-        print('Path doesnt exist !')
-        return None
+    print('Path doesnt exist !')
+    return None
     
 def get_neighbors(v):
     if v in Graph_nodes:
